@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="driver">
+        </df>
+        <df name="user">
+        </df>
+      </df>
+      <df name="espfstest">
+        <in>espfs.c</in>
+        <in>heatshrink_decoder.c</in>
+        <in>main.c</in>
+      </df>
+      <df name="firmware">
+      </df>
+      <df name="html">
+        <df name="wifi">
+        </df>
+      </df>
+      <df name="include">
+        <in>espmissingincludes.h</in>
+        <in>httpdconfig.h</in>
+        <in>stdint.h</in>
+        <in>uart_hw.h</in>
+        <in>user_config.h</in>
+      </df>
+      <df name="lib">
+        <df name="heatshrink">
+          <in>greatest.h</in>
+          <in>heatshrink.c</in>
+          <in>heatshrink_common.h</in>
+          <in>heatshrink_config.h</in>
+          <in>heatshrink_decoder.c</in>
+          <in>heatshrink_decoder.h</in>
+          <in>heatshrink_encoder.c</in>
+          <in>heatshrink_encoder.h</in>
+          <in>test_heatshrink_dynamic.c</in>
+          <in>test_heatshrink_dynamic_theft.c</in>
+          <in>test_heatshrink_static.c</in>
+        </df>
+      </df>
+      <df name="mkespfsimage">
+        <in>espfsformat.h</in>
+        <in>heatshrink_encoder.c</in>
+        <in>main.c</in>
+      </df>
+      <df name="user">
+        <in>cgi.c</in>
+        <in>cgi.h</in>
+        <in>cgiwifi.c</in>
+        <in>cgiwifi.h</in>
+        <in>espfs.c</in>
+        <in>espfs.h</in>
+        <in>heatshrink_config_httpd.h</in>
+        <in>heatshrink_decoder.c</in>
+        <in>httpd.c</in>
+        <in>httpd.h</in>
+        <in>httpdespfs.c</in>
+        <in>httpdespfs.h</in>
+        <in>io.c</in>
+        <in>io.h</in>
+        <in>stdout.c</in>
+        <in>stdout.h</in>
+        <in>user_main.c</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

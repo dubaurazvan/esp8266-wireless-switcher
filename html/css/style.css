@@ -1,0 +1,40 @@
+body {
+    background: #eee;
+    font-family: Arial, sans-serif;
+}
+a {color: #2954a3; text-decoration: none;}
+a:hover {text-decoration: underline;}
+h1{font-size: 19px; padding-left: 200px;}
+#main {
+    width: 800px;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 auto;
+}
+#menu {
+    border-right: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+#content {
+    width: 600px;
+    float: right;
+    border-left: 1px solid #eee;
+}
+.clear {
+    clear: both;
+}
+#menu li {
+    border-bottom: 1px solid #eee;
+    list-style: none;
+    padding: 3px 10px;
+    text-align: right;
+}
+#menu li:hover, li.active {
+     background: #e6e6e4;
+}
+.footer {
+    font-size: 11px;
+}
