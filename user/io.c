@@ -24,7 +24,7 @@
 #define BTNGPIO 0
 
 static ETSTimer resetBtntimer;
-static char GpioState = 1;
+static char GpioState = 0;
 
 void ioLed(int state) {
     if (state == 0) {
