@@ -17,12 +17,12 @@ POST http://{ipAddress}/gpio02.cgi
 Request Body: value=0
 ```
 
-> Returns the GPIO02 status as a string (on|off)
+> Get GPIO02 state as a string (on|off)
 ```bash
 GET http://{ipAddress}/api/gpio02.tpl
 ```
 
-> Returns device info in JSON format.
+> Get device info in JSON format.
 ```bash
 GET http://{ipAddress}/api/device-info.tpl
 ```
